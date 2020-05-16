@@ -27,14 +27,14 @@ public class UserValidation {
         throw new ValidationException(INVALID_EMAIL);
     }
     public UserValidation isValidFirstName(String name) throws ValidationException {
-        if(Utilities.isValidString(name))
+        if(Utilities.isValidName(name))
             return this;
         else
             throw new ValidationException(INVALID_FIRST_NAME);
 
     }
     public UserValidation isValidLastName(String name) throws ValidationException {
-        if(Utilities.isValidString(name))
+        if(Utilities.isValidName(name))
             return this;
         else
             throw new ValidationException(INVALID_LAST_NAME);

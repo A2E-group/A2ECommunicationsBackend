@@ -26,7 +26,7 @@ public class Utilities {
         Pattern pattern = Pattern.compile(emailRegex);
         return pattern.matcher(email).matches();
     }
-    public static boolean isValidString(String name){
+    public static boolean isValidName(String name){
         return isNotNull(name) && !name.isEmpty() && name.matches("^[a-zA-Z]*$");
     }
 
